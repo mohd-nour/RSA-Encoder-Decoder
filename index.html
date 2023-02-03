@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>RSA Encoder</title>
+
+  <!-- BigInteger Library -->
+  <script src="https://peterolson.github.io/BigInteger.js/BigInteger.min.js"></script>
+
+  <!-- RSA Favicon -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+  <!-- jQueryCDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="title">
+    <h1>Welcome to the RSA Encoder</h1>
+    <h3>Select your parameters and input a text.</h3>
+  </div>
+  <div class="bit-selection">
+    <div class="radio-button">
+      <label>1024 bits</label>
+      <input type="radio" name="e-choice" value="1024" id="" required>
+    </div>
+
+    <div class="radio-button">
+      <label>2048 bits</label>
+      <input type="radio" name="e-choice" value="2048" id="" required>
+    </div>
+  </div>
+  <div class="center-container">
+
+    <form class="RSA-container" id="encryptForm">
+      <h3>Encryption</h3>
+      <div class="message-content">
+        <label for="" class="message-label">Message</label>
+        <textarea id="message" name="message" rows="5" cols="0" class="message-input" required></textarea>
+      </div>
+      <div>
+        <button id="Encrypt" class="button" type="button" name="button">Encrypt</button>
+      </div>
+      <div class="message-content">
+        <label for="" class="message-label">Cipher Text</label>
+        <textarea id="encryption" name="encryption" rows="5" cols="0" class="message-input" disabled></textarea>
+      </div>
+    </form>
+
+    <div class="vl"></div>
+
+    <form class="RSA-container" id="decryptForm">
+      <h3>Decryption</h3>
+      <!-- <div class="bit-selection">
+        <div class="radio-button">
+          <label for="sa">1024 bits</label>
+          <input type="radio" name="d-choice" value="1024" id="" required>
+        </div>
+
+        <div class="radio-button">
+          <label for="a">2048 bits</label>
+          <input type="radio" name="d-choice" value="2048" id="" required>
+        </div>
+      </div> -->
+      <div class="message-content">
+        <label for="" class="message-label">Message</label>
+        <textarea id="cipherText" name="cipherText" rows="5" cols="0" class="message-input" required></textarea>
+      </div>
+      <div>
+        <button id="Decrypt" class="button" type="button" name="button">Decrypt</button>
+      </div>
+      <div class="message-content">
+        <label for="" class="message-label">Plain Text</label>
+        <textarea id="decryption" name="decryption" rows="5" cols="0" class="message-input" disabled></textarea>
+      </div>
+    </form>
+
+  </div>
+  <script src="scripts.js" charset="utf-8"></script>
+</body>
+
+<section>
+  <div class="wave wave1"></div>
+  <div class="wave wave2"></div>
+  <div class="wave wave3"></div>
+  <div class="wave wave4"></div>
+</section>
+
+
+</html>
+
+<section>
+  <div class="wave wave1"></div>
+  <div class="wave wave2"></div>
+  <div class="wave wave3"></div>
+  <div class="wave wave4"></div>
+</section>
